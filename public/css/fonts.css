@@ -1,0 +1,22 @@
+@font-face {
+  font-family: SFMono;
+  src: url("../fonts/SFMono-Regular.woff2");
+}
+
+@font-face {
+  font-family: Calibre;
+  font-weight: 400;
+  src: url("../fonts/Calibre-Regular.woff2");
+}
+
+@font-face {
+  font-family: Calibre;
+  font-weight: 500;
+  src: url("../fonts/Calibre-Medium.woff2");
+}
+
+@font-face {
+  font-family: Calibre;
+  font-weight: 600;
+  src: url("../fonts/Calibre-Semibold.woff2");
+}

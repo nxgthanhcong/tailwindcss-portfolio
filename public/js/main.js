@@ -38,13 +38,13 @@ const helper = {
     };
 
     const arrFunctions = [
-      // {
-      //   name: "hand-loading",
-      //   function: async () => {
-      //     $(".hand-loading").style.animationDelay = `${2250}ms`;
-      //     await helper.delay(2250);
-      //   },
-      // },
+      {
+        name: "hand-loading",
+        function: async () => {
+          $(".hand-loading").style.animationDelay = `${2250}ms`;
+          await helper.delay(2250);
+        },
+      },
       {
         name: "logo-fade",
         function: async () => {
