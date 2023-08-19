@@ -9,6 +9,7 @@ module.exports = {
       },
       boxShadow: {
         header: "0 1px 18px 10px rgba(0, 0, 0, 0.18)",
+        button: "4px 4px var(--color-green)",
       },
     },
     colors: {
