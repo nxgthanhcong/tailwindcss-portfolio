@@ -7,6 +7,9 @@ module.exports = {
         calibre: ["Calibre", "sans-serif"],
         sfMono: ["SFMono", "sans-serif"],
       },
+      boxShadow: {
+        header: "0 1px 18px 10px rgba(0, 0, 0, 0.18)",
+      },
     },
     colors: {
       primary: "var(--color-navy)",
@@ -19,6 +22,7 @@ module.exports = {
       slate: "var(--color-slate)",
       darkSlate: "var(--color-dark-slate)",
       green: "var(--color-green)",
+      builtedOverlay: "rgba(255, 255, 255, 0.05)",
     },
   },
   plugins: [],

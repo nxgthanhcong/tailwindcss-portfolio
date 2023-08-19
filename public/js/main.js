@@ -29,7 +29,7 @@ const helper = {
 
         el.setAttribute(
           "class",
-          orginClass.replace(fadeType, fadeType + "-active")
+          orginClass.replace(fadeType, fadeType + "-active"),
         );
         transitionDelay > 0 &&
           (el.style.transitionDelay = index * transitionDelay + "ms");
@@ -38,13 +38,13 @@ const helper = {
     };
 
     const arrFunctions = [
-      {
-        name: "hand-loading",
-        function: async () => {
-          $(".hand-loading").style.animationDelay = `${2250}ms`;
-          await helper.delay(2250);
-        },
-      },
+      // {
+      //   name: "hand-loading",
+      //   function: async () => {
+      //     $(".hand-loading").style.animationDelay = `${2250}ms`;
+      //     await helper.delay(2250);
+      //   },
+      // },
       {
         name: "logo-fade",
         function: async () => {
@@ -68,7 +68,7 @@ const helper = {
         function: async () => {
           await animateElement(
             ".home-section .fade-enter, .information-vertical.fade-enter",
-            300
+            300,
           );
         },
       },
@@ -95,7 +95,7 @@ const helper = {
       .then((registration) => {
         console.log(
           "Service Worker registered with scope:",
-          registration.scope
+          registration.scope,
         );
       })
       .catch((error) => {
@@ -103,12 +103,11 @@ const helper = {
       });
   }
 
-  // header shadow: header--active
-  const HEADER_ACTIVE = "header--active";
+  // header active css
   const header = $("#header");
   window.addEventListener("scroll", function () {
     const pageOffsetY = window.pageYOffset;
-    header.classList[pageOffsetY > 0 ? "add" : "remove"](HEADER_ACTIVE);
+    header.classList[pageOffsetY > 0 ? "add" : "remove"]("active");
   });
 
   // moblie:  button toggle menu
@@ -124,7 +123,7 @@ const helper = {
   const tabs = $$(".tab__item");
   const tabContents = $$(".tab-content__item");
   const tabLine = $(".tab__line");
-  const activeTabClassname = "tab__item--active";
+  const activeTabClassname = "active";
 
   const removeStateActiveTab = () => {
     tabs.forEach((tab) => {
@@ -148,7 +147,7 @@ const helper = {
 
       hiddenAllTabContent();
       const activeTabcontent = $(
-        `.tab-content__item[data-index="${tabIndex}"]`
+        `.tab-content__item[data-index="${tabIndex}"]`,
       );
       activeTabcontent.classList.remove("hidden");
     });
@@ -169,3 +168,11 @@ const helper = {
     `;
   });
 })();
+
+// $(".hand-loading__img").addEventListener(
+//   "animationend",
+//   function () {
+//     $("body").classList.remove("hidden");
+//   },
+//   false
+// );
