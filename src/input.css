@@ -151,3 +151,13 @@ body {
     transparent 80%
   );
 }
+
+.nav-item.active .nav-item__indicator {
+  background-color: rgb(226 232 240);
+  height: 2px;
+  width: 64px;
+}
+
+.nav-item.active .nav-item__text {
+  color: rgb(226 232 240);
+}

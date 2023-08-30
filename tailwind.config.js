@@ -24,6 +24,11 @@ module.exports = {
       darkSlate: "var(--color-dark-slate)",
       green: "var(--color-green)",
       builtedOverlay: "rgba(255, 255, 255, 0.05)",
+      slate: {
+        200: "rgba(226, 232, 240, 1)", // 200: "rgba(226, 232, 240, var(--tw-text-opacity))",
+        400: "rgb(148, 163, 184)", // 200: "rgb(148 163 184/var(--tw-text-opacity))",
+        500: "rgb(100, 116, 139)",
+      },
     },
   },
   plugins: [],
