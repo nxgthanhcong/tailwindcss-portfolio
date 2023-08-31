@@ -151,6 +151,16 @@ const helper = {
       );
       activeTabcontent.classList.remove("hidden");
     });
+
+    // actived item
+    window.addEventListener("scroll", function () {
+      const elSections = $$(".v2-section");
+      elSections.forEach((el) => {
+        console.log(
+          el.getAttribute("id") + ": " + el.getBoundingClientRect().top,
+        );
+      });
+    });
   });
 
   // CURSOR

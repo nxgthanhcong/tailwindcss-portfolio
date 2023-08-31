@@ -154,7 +154,7 @@ body {
 
 .nav-item.active .nav-item__indicator {
   background-color: rgb(226 232 240);
-  height: 2px;
+  height: 1px;
   width: 64px;
 }
 

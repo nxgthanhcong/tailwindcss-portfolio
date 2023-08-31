@@ -31,25 +31,33 @@
 .fadedown-enter {
   opacity: 0.005;
   transform: translateY(-20px);
-  transition: opacity 300ms, transform 300ms;
+  transition:
+    opacity 300ms,
+    transform 300ms;
 }
 
 .fadedown-enter-active {
   opacity: 1;
   transform: translateY(0px);
-  transition: opacity 300ms, transform 300ms;
+  transition:
+    opacity 300ms,
+    transform 300ms;
 }
 
 .fadeup-enter {
   opacity: 0.005;
   transform: translateY(20px);
-  transition: opacity 300ms, transform 300ms;
+  transition:
+    opacity 300ms,
+    transform 300ms;
 }
 
 .fadeup-enter-active {
   opacity: 1;
   transform: translateY(0px);
-  transition: opacity 300ms, transform 300ms;
+  transition:
+    opacity 300ms,
+    transform 300ms;
 }
 
 .fade-enter {
