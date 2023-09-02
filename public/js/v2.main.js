@@ -190,7 +190,7 @@ const UIController = {
         <p class="mt-3 text-lg leading-5 text-slate-400">
           ${"" + d.description}
         </p>
-        <ul class="${d.links ? "flex" : "hidden"} mt-4 flex-wrap gap-4">
+        <ul class="${d.links ? "flex" : "hidden"}  my-3 flex-wrap gap-4">
           ${
             d.links
               ? d.links
@@ -206,7 +206,7 @@ const UIController = {
               : ""
           }
         </ul>
-        <ul class="${d.tags ? "flex" : "hidden"} mt-4 flex flex-wrap gap-2">
+        <ul class="${d.tags ? "flex" : "hidden"}  my-3 flex flex-wrap gap-2">
           ${
             d.tags
               ? d.tags
@@ -406,7 +406,7 @@ const UIController = {
               hanging out with my wife and two cats, or running around
               Hyrule searching for Korok seeds K o r o k s e e d s .
             </p>
-            <ul class="${d.awards ? "flex" : "hidden"} mb-4 flex-wrap gap-4">
+            <ul class="${d.awards ? "flex" : "hidden"} my-3 flex-wrap gap-4">
               ${
                 d.awards
                   ? d.awards
@@ -422,7 +422,9 @@ const UIController = {
                   : ""
               }
             </ul>
-            <ul class="${d.tags ? "flex" : "hidden"} mb-4 flex flex-wrap gap-2">
+            <ul class="${
+              d.tags ? "flex" : "hidden"
+            }  my-3 flex flex-wrap gap-2">
               ${
                 d.tags
                   ? d.tags
