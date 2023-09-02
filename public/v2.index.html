@@ -10,10 +10,10 @@
   </head>
   <body class="bg-primary font-calibre">
     <div class="mx-auto max-w-screen-xl lg:px-24">
-      <main class="lg:flex lg:justify-between lg:gap-4">
+      <main class="px-6 lg:flex lg:justify-between lg:gap-4 lg:px-0">
         <!-- ================================= LEFT PART ================================= -->
         <header
-          class="flex max-h-screen flex-col justify-between py-24 lg:sticky lg:top-0 lg:w-1/2"
+          class="flex max-h-screen flex-col justify-between py-12 lg:sticky lg:top-0 lg:w-1/2 lg:py-24"
         >
           <div>
             <h1 class="text-6xl font-bold text-slate-200">Ng Thanh Cong</h1>
@@ -28,7 +28,7 @@
           </div>
 
           <!-- ============================ SOCIAL ICONS ============================ -->
-          <ul class="flex gap-x-6">
+          <ul class="mt-10 flex gap-x-6">
             <li>
               <a href="" class="text-slate-400 hover:text-slate-200">
                 <svg
@@ -93,9 +93,14 @@
           </ul>
         </header>
         <!-- ================================= RIGHT PART ================================= -->
-        <div class="scroll-smooth py-24 lg:w-1/2">
+        <div class="scroll-smooth py-12 lg:w-1/2 lg:py-24">
           <!-- ================================= ABOUT ================================= -->
-          <div id="about" data-item="about" class="v2-section about p-4">
+          <div id="about" data-item="about" class="v2-section about">
+            <h1
+              class="text-md mb-8 font-semibold uppercase tracking-widest text-slate-200 lg:hidden"
+            >
+              ABOUT
+            </h1>
             <p class="mb-4 text-xl text-slate-400">
               Back in 2012, I decided to try my hand at creating custom
               <span class="text-slate-200">Tumblr</span>
@@ -125,6 +130,11 @@
             data-item="experiences"
             class="v2-section mt-32"
           >
+            <h1
+              class="text-md mb-8 font-semibold uppercase tracking-widest text-slate-200 lg:hidden"
+            >
+              Experiences
+            </h1>
             <ul id="experience-list"></ul>
             <a href="" class="group mt-4 block text-lg font-medium text-white">
               View full résume1
@@ -146,6 +156,11 @@
 
           <!-- ================================= PROJECTS ================================= -->
           <div id="projects" data-item="projects" class="v2-section mt-32">
+            <h1
+              class="text-md mb-8 font-semibold uppercase tracking-widest text-slate-200 lg:hidden"
+            >
+              Projects
+            </h1>
             <ul id="project-list"></ul>
             <a href="" class="group mt-4 block text-lg font-medium text-white">
               View full projéct
