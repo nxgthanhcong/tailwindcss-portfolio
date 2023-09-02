@@ -514,7 +514,7 @@ const UIController = {
       currentItemList.forEach((item) => {
         item.addEventListener("mouseover", function () {
           currentItemList.forEach((item) => {
-            item.style.opacity = "0.6";
+            item.style.opacity = "0.5";
           });
           this.style.opacity = "1";
         });
