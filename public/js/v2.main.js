@@ -160,17 +160,17 @@ const UIController = {
       .map(
         (d) => `
     <li
-      class="hightlight-item group grid grid-cols-8 mt-4 gap-x-8 rounded-md p-4 duration-200 hover:bg-[rgba(255,255,255,0.1)] hover:shadow-[-1px_1px_10px_4px_rgba(0,0,0,0.02)] hover:border-t hover:border-[rgba(255,255,255,0.1)]"
+      class="hightlight-item group grid lg:grid-cols-8 mb-12 lg:mb-4 gap-x-8 rounded-md lg:p-4 duration-200 lg:hover:bg-[rgba(255,255,255,0.1)] lg:hover:shadow-[-1px_1px_10px_4px_rgba(0,0,0,0.02)] lg:hover:border-t lg:hover:border-[rgba(255,255,255,0.1)]"
     >
-      <div class="col-span-2">
+      <div class="lg:col-span-2">
         <h3 class="text-sm font-medium text-slate-500">
           ${("" + d.startDate).toUpperCase()} - ${(
             "" + d.endDate
           ).toUpperCase()}
         </h3>
       </div>
-      <div class="col-span-6">
-        <h5 class="text-xl font-normal text-slate-200">
+      <div class="lg:col-span-6">
+        <h5 class="text-xl font-medium text-slate-200">
           ${"" + d.position} - ${"" + d.company}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -261,10 +261,10 @@ const UIController = {
     const blogListContent = blogDataItems
       .map(
         ({ imgUrl, createDate, title }) => `
-    <li
-      class="hightlight-item group grid grid-cols-8 gap-x-4 rounded-md p-4 duration-200 hover:bg-[rgba(255,255,255,0.1)] hover:shadow-[-1px_1px_10px_4px_rgba(0,0,0,0.02)] hover:border-t hover:border-[rgba(255,255,255,0.1)]"
-    >
-      <div class="col-span-2">
+        <li
+            class="hightlight-item group grid lg:grid-cols-8 mb-12 lg:mb-4 gap-x-8 rounded-md lg:p-4 duration-200 lg:hover:bg-[rgba(255,255,255,0.1)] lg:hover:shadow-[-1px_1px_10px_4px_rgba(0,0,0,0.02)] lg:hover:border-t lg:hover:border-[rgba(255,255,255,0.1)] gap-y-2"
+          >
+      <div class="col-span-3 lg:col-span-2">
         <img
           class="bg-[rgba(255, 255, 255, 0.15)] rounded border-2 border-solid border-[rgba(255,255,255,0.1)]"
           src="${imgUrl}"
@@ -272,7 +272,7 @@ const UIController = {
           alt=""
         />
       </div>
-      <div class="col-span-6">
+      <div class="col-span-6 -order-1 lg:order-none">
         <h5 class="text-normal font-medium text-slate-500">${createDate}</h5>
         <h6 class="text-xl font-medium text-slate-200">
           ${title}
@@ -374,19 +374,18 @@ const UIController = {
       .map(
         (d) =>
           `
-        <li
-          class="hightlight-item mt-4 group grid grid-cols-8 gap-x-4 rounded-md p-4 duration-200 hover:bg-[rgba(255,255,255,0.1)] hover:shadow-[-1px_1px_10px_4px_rgba(0,0,0,0.02)] hover:border-t hover:border-[rgba(255,255,255,0.1)]"
-        >
-          <div class="col-span-2">
+          <li
+            class="hightlight-item group grid lg:grid-cols-8 mb-12 lg:mb-4 gap-x-8 rounded-md lg:p-4 duration-200 lg:hover:bg-[rgba(255,255,255,0.1)] lg:hover:shadow-[-1px_1px_10px_4px_rgba(0,0,0,0.02)] lg:hover:border-t lg:hover:border-[rgba(255,255,255,0.1)] gap-y-2"
+          >
+          <div class="col-span-3 lg:col-span-2">
             <img
               class="bg-[rgba(255, 255, 255, 0.15)] rounded border-2 border-solid border-[rgba(255,255,255,0.1)]"
               src="./images/spotify.webp"
-              width="120px"
               alt=""
             />
           </div>
-          <div class="col-span-6">
-            <h5 class="text-xl font-normal text-slate-200">
+          <div class="col-span-6 -order-1 lg:order-none">
+            <h5 class="text-xl font-medium text-slate-200">
               UI Engineer Co-op - Apple
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -407,7 +406,7 @@ const UIController = {
               hanging out with my wife and two cats, or running around
               Hyrule searching for Korok seeds K o r o k s e e d s .
             </p>
-            <ul class="${d.awards ? "flex" : "hidden"} mt-4 flex-wrap gap-4">
+            <ul class="${d.awards ? "flex" : "hidden"} mb-4 flex-wrap gap-4">
               ${
                 d.awards
                   ? d.awards
@@ -423,7 +422,7 @@ const UIController = {
                   : ""
               }
             </ul>
-            <ul class="${d.tags ? "flex" : "hidden"} mt-4 flex flex-wrap gap-2">
+            <ul class="${d.tags ? "flex" : "hidden"} mb-4 flex flex-wrap gap-2">
               ${
                 d.tags
                   ? d.tags
