@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="icon" href="./images/icon.png" />
+    <link rel="manifest" href="./manifest.json" />
     <link rel="stylesheet" href="./css/fonts.css" />
-    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/v1.style.css" />
   </head>
-  <body class="bg-primary font-calibre">
+  <body class="text-sky-400 bg-primary font-calibre">
     <div class="mx-auto max-w-screen-xl lg:px-24">
       <main class="mx-6 lg:flex lg:justify-between lg:gap-4 lg:px-0">
         <!-- ================================= LEFT PART ================================= -->
@@ -96,11 +97,7 @@
         <div class="scroll-smooth py-12 lg:w-1/2 lg:py-24">
           <!-- ================================= ABOUT ================================= -->
           <div id="about" data-item="about" class="v2-section about">
-            <h1
-              class="text-md sticky top-0 -mx-6 mb-8 flex h-12 w-screen items-center bg-primary px-6 font-semibold uppercase tracking-widest text-slate-200 backdrop-blur lg:hidden"
-            >
-              ABOUT
-            </h1>
+            <h1 class="section__title">ABOUT</h1>
             <p class="mb-4 text-xl text-slate-400">
               Back in 2012, I decided to try my hand at creating custom
               <span class="text-slate-200">Tumblr</span>
@@ -130,11 +127,7 @@
             data-item="experiences"
             class="v2-section mt-32"
           >
-            <h1
-              class="text-md sticky top-0 -mx-6 mb-8 flex h-12 w-screen items-center bg-primary px-6 font-semibold uppercase tracking-widest text-slate-200 backdrop-blur lg:hidden"
-            >
-              Experiences
-            </h1>
+            <h1 class="section__title">Experiences</h1>
             <ul id="experience-list"></ul>
             <a href="" class="group mt-4 block text-lg font-medium text-white">
               View full résume1
@@ -156,11 +149,7 @@
 
           <!-- ================================= PROJECTS ================================= -->
           <div id="projects" data-item="projects" class="v2-section mt-32">
-            <h1
-              class="text-md sticky top-0 -mx-6 mb-8 flex h-12 w-screen items-center bg-primary px-6 font-semibold uppercase tracking-widest text-slate-200 backdrop-blur lg:hidden"
-            >
-              Projects
-            </h1>
+            <h1 class="section__title">Projects</h1>
             <ul id="project-list"></ul>
             <a href="" class="group mt-4 block text-lg font-medium text-white">
               View full projéct
@@ -182,11 +171,7 @@
 
           <!-- ================================= BLOGS ================================= -->
           <div class="mt-32">
-            <h1
-              class="text-md sticky top-0 -mx-6 mb-8 flex h-12 w-screen items-center bg-primary px-6 font-semibold uppercase tracking-widest text-slate-200 backdrop-blur lg:hidden"
-            >
-              Blogs
-            </h1>
+            <h1 class="section__title">Blogs</h1>
             <ul id="blog-list"></ul>
             <a href="" class="group mt-4 block text-lg font-medium text-white">
               <span>View full blóg</span>
@@ -230,6 +215,6 @@
         });
       }
     </script>
-    <script src="./js/v2.main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-navy: #011424;
+    --color-dark-slate: #495670;
+  }
+}
+
+@layer components {
+  .section__title {
+    @apply sticky top-0 -mx-6 mb-8 flex h-12 w-screen items-center bg-primary px-6 font-semibold uppercase tracking-widest text-slate-200 backdrop-blur lg:hidden;
+  }
+}
+
+/* ==================== SCROLL BAR ================= */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-dark-slate);
+  border: 3px solid var(--color-navy);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-navy);
+}
+
+.cursor-overlay {
+  background-image: radial-gradient(
+    600px at center,
+    rgba(29, 78, 216, 0.15),
+    transparent 80%
+  );
+}
+
+.nav-item.active .nav-item__indicator {
+  background-color: rgb(226 232 240);
+  height: 1px;
+  width: 64px;
+}
+
+.nav-item.active .nav-item__text {
+  color: rgb(226 232 240);
+}
